@@ -3,9 +3,9 @@ const morgan = require('morgan');
 
 const app = express();
 
-const blogRouter = require('./routers/blog');
+const blogRouter = require('./controllers/blog');
 
-app.use(morgan('common'))l
+app.use(morgan('common'));
 
 app.use(express.static('public'));
 
